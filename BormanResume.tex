@@ -163,6 +163,9 @@
 \newenvironment{innerlist}[1][\enskip\textbullet]%
         {\begin{compactitem}[#1]}{\end{compactitem}}
         
+\newenvironment{innerlist_circ}[1][\enskip$\circ$]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+        
  \newenvironment{loneinnerlist}[1][\textbullet]%
         {\begin{compactitem}[#1]}{\end{compactitem}}
 
@@ -176,36 +179,53 @@
 %%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\makeheading{Strom Borman \hspace{3.9in} Research Scientist}
+\makeheading{Strom Borman \hspace{3.25in} Senior Research Scientist}
 
 \section{About}
-Research scientist working at the intersection of machine learning and control theory.\\  
+Lead a team of scientists using machine learning and control theory to develop 
+production algorithms for optimal pacing and bidding strategies in real-time ad auctions.\\ 
 
-Have 10+ years of experience collaborating with small teams to analyze problems, construct solutions, and effectively communicate the results to stakeholders.  Excels at synthesizing and distilling complex concepts/scenarios into easily understandable forms and rapidly acquiring new skills and knowledge.
+My math research background allows me to quickly learn and synthesize complex and domain-specific knowledge so that 
+ML/AI tools can be used to craft high-impact solutions. My experience as a professor enables me to communicate 
+these technical solutions effectively across diverse stakeholders and partners.
 
 
-
-\section{Work}
-Yahoo!, Senior Research Scientist, 12/2023 -- Present.\\
-Yahoo!, Research Scientist, 7/2022 -- 12/2023.
+\section{Work History}
+Yahoo, Senior Research Scientist, 12/2023 -- Present.\\
+Yahoo, Research Scientist, 7/2022 -- 12/2023.
 \begin{innerlist}
-	\item Lead of team responsible for control algorithm for bidding in real-time ad auctions.
-	\item Designed and implemented changes leading to a 19\% improvement in advertiser ROI.
-	\item Rebuilt institutional knowledge of the algorithm's legacy Java code base.
-	\item Oversaw implementation for ML-based cold-start prediction of the price control signal.    
+	\item Implemented improvements that are behind an 8-figure increase in annual margins. 
+	\item Science lead for many projects (a sample):
+	\begin{innerlist_circ}
+		\item Budget splitting based A/B testing infrastructure.
+		\item Simplify legacy java pacing algorithm into a modern python implementation.
+		\item Metrics for supply scoring: When can bid requests be discarded early.
+		\item Pacing initialization: Model what pacing signals to use in a cold-start.
+		\item Noised bidding strategies: To handle market discontinuities in signal to spend. 
+	\end{innerlist_circ}
 \end{innerlist}
 
 
 \section{Academic History}
-University of Illinois Urbana-Champaign, Assistant Professor, 8/2016 -- 8/2021.\\
-Stanford University, Postdoctoral Fellow, 8/2013 -- 8/2016.\\
+University of Illinois Urbana-Champaign, Assistant Professor, 8/2016 -- 8/2021.
+\begin{innerlist}
+	\item Researched what is now known as the Borman-Sheridan class in symplectic geometry.
+	\item Consistently recognized as an excellent teacher among all faculty at the university.
+\end{innerlist}
+\smallskip
+Stanford University, Postdoctoral Fellow, 8/2013 -- 8/2016.
+\begin{innerlist}
+	\item Solved major long (60 years) open problem in high dimensional contact topology.
+\end{innerlist}
+\smallskip
 Institute for Advanced Study, Member, 8/2014 -- 8/2015.
 
-\section{Academic Summary}
-Published 10 papers (500+ citations) in geometry and probability in top math journals.\\
+\section{Research Summary}
+Published 12 papers (600+ citations) in geometry and probability in top math journals.\\
 20+ keynote speeches at international conferences (e.g.\ Germany, France, UK).\\
 20+ research lectures at elite universities (e.g.\ MIT, Columbia, Berkeley, ETH Z\"{u}rich).\\
-Taught dozens of math courses at the upper undergraduate and graduate level.
+ML Conference Paper: ICLR 2024
+%Taught dozens of math courses at the upper undergraduate and graduate level.
 %\vspace{-\baselineskip}
 %\begin{loneinnerlist}
 %\item Published 10 papers (400+ citations) in geometry and probability in top math journals
